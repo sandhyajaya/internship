@@ -10,7 +10,7 @@ $password=password_hash($password,PASSWORD_BCRYPT);
 $query="INSERT INTO `users`(`name`,`email`,`password`) VALUES('$name','$email','$password')";
 
 $result=mysqli_query($con,$query);
-
+	
 if($result){
 	echo "successfully inserted";
 
